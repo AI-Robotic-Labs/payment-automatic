@@ -9,3 +9,9 @@ AI Agent for payments automatic
 2. The `decision_engine.rs` contains the decision-making rules for payments.
 
 3. The `payments.rs` handles the actual payment processing (using a mock API for simplicity)
+
+## Example
+
+```json
+Processing payment: PaymentRequest { user_id: 42, amount: 250.5, currency: "USD", purpose: "Subscription Payment" }
+```
