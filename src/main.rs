@@ -1,8 +1,10 @@
 mod decision_engine;
 mod payments;
+mod stripe_example;
 
 use decision_engine::process_payment_request;
 use payments::PaymentRequest;
+use stripe_example::run_stripe_example;
 
 #[tokio::main]
 async fn main() {
@@ -21,4 +23,10 @@ async fn main() {
         Ok(message) => println!("Payment Successful: {}", message),
         Err(error) => eprintln!("Payment Failed: {}", error),
     }
+}
+
+
+#[tokio::main]
+async fn main() {
+    run_stripe_example().await;
 }
