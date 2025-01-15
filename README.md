@@ -1,2 +1,3 @@
-# payment-automatic
+# Payment Automatic
+
 AI Agent for payments automatic
