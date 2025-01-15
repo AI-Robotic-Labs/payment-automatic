@@ -27,6 +27,9 @@ async fn main() {
 
 
 #[tokio::main]
-async fn main() {
-    run_stripe_example().await;
+#[allow(dead_code)]
+async fn payment_stripe() {
+    tokio::runtime::Runtime::new().unwrap().block_on(async {
+        run_stripe_example();
+    });
 }
