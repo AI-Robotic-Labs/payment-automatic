@@ -2,6 +2,8 @@
 
 AI Agent for payments automatic
 
+Idea and design by Rsync25
+
 ## How works?
 
 1. The `main.rs` initializes a `PaymentRequest` and sends it to the `process_payment_request` function. 
