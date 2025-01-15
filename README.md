@@ -10,8 +10,20 @@ AI Agent for payments automatic
 
 3. The `payments.rs` handles the actual payment processing (using a mock API for simplicity)
 
-## Example
+## Use Cases
 
-```json
-Processing payment: PaymentRequest { user_id: 42, amount: 250.5, currency: "USD", purpose: "Subscription Payment" }
-```
+1. **Payment Request**: The AI agent receives a payment request from a user.
+2. **Decision Engine**: The AI agent uses the decision engine to determine if the payment should be approved or denied.
+3. **Payment Processing**: The AI agent processes the payment using the payment processing module.
+4. **Response**: The AI agent sends a response to the user.
+
+## How to Run
+1. Clone the repository: `git clone https://github.com/AI-Robotic-Labs/payment-automatic.git`
+
+2. Navigate to the project directory: `cd payment-automatic`
+
+3. Build the project: `cargo build`
+
+4. Run the project: `cargo run`
+
+
