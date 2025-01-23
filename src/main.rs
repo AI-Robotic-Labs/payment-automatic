@@ -37,7 +37,7 @@ async fn main() {
 async fn payment_stripe() {
     println!("Running Stripe example...");
     run_stripe_example().await;
-}async fn payment_stripe()
+}
     fn payment_stripe() {
         println!("Running Stripe example...");
         run_stripe_example();
