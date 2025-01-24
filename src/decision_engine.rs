@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 use reqwest;
-
+use crb::agent::Agent;
 /// Represents a payment request.
 ///
 /// This structure is serializable and deserializable with `Serde` for easy conversion to/from JSON.
@@ -10,6 +10,14 @@ pub struct PaymentRequest {
     pub amount: f64,
     pub currency: String,
     pub purpose: String,
+}
+
+#[derive(Debug)]
+pub struct DecisionAgent {
+    pub id: u32,
+    pub name: String,
+    pub email: String,
+    pub balance: f64,
 }
 
 /// Simulates processing of a payment via an external API or logic.
