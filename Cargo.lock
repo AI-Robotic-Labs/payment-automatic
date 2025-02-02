@@ -236,13 +236,12 @@ dependencies = [
 
 [[package]]
 name = "crb"
-version = "0.0.27"
+version = "0.0.28"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c03d01f389aa14fc00b6817bbcccee19799820a7e6a729ce98a41be9b86ac54d"
+checksum = "3074b7c559c84f36c756fb59d924ae999ac9d411c0948b7261a56b8229b5e2c5"
 dependencies = [
  "crb-agent",
  "crb-core",
- "crb-pipeline",
  "crb-runtime",
  "crb-send",
  "crb-superagent",
@@ -250,9 +249,9 @@ dependencies = [
 
 [[package]]
 name = "crb-agent"
-version = "0.0.27"
+version = "0.0.28"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b2594a119510cb42b309f8b3f1562d957c466ba0d9e9c4dda379771d7adeadd1"
+checksum = "8d044c9e5bb3b3b1dbf9e7636cec5421e4517202705a37526bb7906503284092"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -267,9 +266,9 @@ dependencies = [
 
 [[package]]
 name = "crb-core"
-version = "0.0.27"
+version = "0.0.28"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e75191cf3f861c3d5e565b1bb1ab83863196d7513346e7ac5a8d77e996e16906"
+checksum = "15d6abc5ddcce5870bdfb67879720fb8bc0ed9672ca2257e011e0ee4163ddcc9"
 dependencies = [
  "anyhow",
  "derive_more 1.0.0",
@@ -286,27 +285,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "crb-pipeline"
-version = "0.0.27"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0bd9457cf4299bafbc72faf1e11853d4edf6f01ac28e435f80b3845a283d468c"
-dependencies = [
- "anyhow",
- "async-trait",
- "crb-agent",
- "crb-core",
- "crb-runtime",
- "crb-superagent",
- "derive_more 1.0.0",
- "log",
- "typedmap",
-]
-
-[[package]]
 name = "crb-runtime"
-version = "0.0.27"
+version = "0.0.28"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d5fcbd78c6e8eac88d22b51d54c6772514e298ff91e0568ab7b9b1606a39eff9"
+checksum = "4f042001e4e66000377205dadbd4628527300409fb483f638c8a2e5c714b7df4"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -318,18 +300,18 @@ dependencies = [
 
 [[package]]
 name = "crb-send"
-version = "0.0.27"
+version = "0.0.28"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a5290d09bc1651b3deb4ee7d54bf9620e5ee31f02335b81db3ee8ff13f6a533e"
+checksum = "455c7b0e794f683117323927c74fac7392206719d110dd2791eb04e2d241eead"
 dependencies = [
  "anyhow",
 ]
 
 [[package]]
 name = "crb-superagent"
-version = "0.0.27"
+version = "0.0.28"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5ab07dfabb397326d68f5c13911d419528c536051dbcc0443e2cd3f164ea3872"
+checksum = "a12e94726820a78778aef573b3eebd0d95c41e75ad4bc97c9e555d17747426fd"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -358,20 +340,6 @@ checksum = "1bfb12502f3fc46cca1bb51ac28df9d618d813cdc3d2f25b9fe775a34af26bb3"
 dependencies = [
  "generic-array",
  "typenum",
-]
-
-[[package]]
-name = "dashmap"
-version = "6.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5041cc499144891f3790297212f32a74fb938e5136a14943f338ef9e0ae276cf"
-dependencies = [
- "cfg-if",
- "crossbeam-utils",
- "hashbrown 0.14.5",
- "lock_api",
- "once_cell",
- "parking_lot_core",
 ]
 
 [[package]]
@@ -711,12 +679,6 @@ dependencies = [
  "tokio-util",
  "tracing",
 ]
-
-[[package]]
-name = "hashbrown"
-version = "0.14.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e5274423e17b7c9fc20b6e7e208532f9b19825d82dfd615708b70edd83df41f1"
 
 [[package]]
 name = "hashbrown"
@@ -1106,7 +1068,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "62f822373a4fe84d4bb149bf54e584a7f4abec90e072ed49cda0edea5b95471f"
 dependencies = [
  "equivalent",
- "hashbrown 0.15.2",
+ "hashbrown",
 ]
 
 [[package]]
@@ -2062,15 +2024,6 @@ checksum = "83a642c7ed943babed2ba8681bf96321c557ffc1d68a52a510c64e270f36119a"
 dependencies = [
  "derive_more 0.99.18",
  "slab",
-]
-
-[[package]]
-name = "typedmap"
-version = "0.6.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "63278e72ed4f207eb3216c944cbafb35bdb656d2eab97ef73c0c165a1cd3e319"
-dependencies = [
- "dashmap",
 ]
 
 [[package]]
