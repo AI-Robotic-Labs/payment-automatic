@@ -9,5 +9,5 @@ serde_json = "1.0.138"
 reqwest = { version = "0.12.12", features = ["json"] }
 tokio =  { version = "1.43.0", features = ["full"] }
 async-stripe = { version = "0.39.1",  features = ["runtime-tokio-hyper"] }
-crb = "0.0.27"
+crb = "0.0.28"
 mcp_rust_schema = "0.1.4"
