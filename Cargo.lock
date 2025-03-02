@@ -45,7 +45,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "81953c529336010edd6d8e358f886d9581267795c61b19475b71314bffa46d35"
 dependencies = [
  "concurrent-queue",
- "event-listener 2.5.3",
+ "event-listener",
  "futures-core",
 ]
 
@@ -230,9 +230,9 @@ dependencies = [
 
 [[package]]
 name = "crb"
-version = "0.0.29"
+version = "0.0.31"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "95fbf397ba333f06b40a67dcd1754766dd26d65759b521b849d9ad45c3d162ae"
+checksum = "017ddd122d1491b8c2e3a2678f1463f170a33fa493babdfe579b883e085ecfe8"
 dependencies = [
  "crb-agent",
  "crb-core",
@@ -243,9 +243,9 @@ dependencies = [
 
 [[package]]
 name = "crb-agent"
-version = "0.0.29"
+version = "0.0.31"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "177d46133c6e1b85b04db81b51dd18713c876f86cc04df86b10b16cd7555dbb1"
+checksum = "6bdf16fdbf847989014627409316bdba2af8431b33a91ef7cb6f997bce59c187"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -255,34 +255,37 @@ dependencies = [
  "derive_more 2.0.1",
  "futures",
  "log",
- "tokio",
 ]
 
 [[package]]
 name = "crb-core"
-version = "0.0.29"
+version = "0.0.31"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6466760973b8064bc626e23cbef26f3a961e0804d62d16cb818392873b7ff8a6"
+checksum = "56abbaa1ee2cef9ca1501a8e6052e427b03727e9073a908bc5905cfdf9bd58df"
 dependencies = [
  "anyhow",
+ "crb-core-std",
  "derive_more 2.0.1",
- "event-listener 5.4.0",
  "futures",
- "gloo-timers",
- "js-sys",
- "ordered-float",
  "thiserror 2.0.11",
  "tokio",
+]
+
+[[package]]
+name = "crb-core-std"
+version = "0.0.31"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bee970b4568ccdeb3b5f3accf2186c3025496c889efa949be29d4984c7458606"
+dependencies = [
+ "tokio",
  "uuid 1.15.1",
- "wasm-bindgen-futures",
- "web-sys",
 ]
 
 [[package]]
 name = "crb-runtime"
-version = "0.0.29"
+version = "0.0.31"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2c8db26f8b9b90a6ccd56e85ae0714056bcc34a45a15cc6d2220784176df8867"
+checksum = "46104f014498420c7b65ce7f2009f5544876d486548bc3695d3ce211387f257d"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -294,18 +297,18 @@ dependencies = [
 
 [[package]]
 name = "crb-send"
-version = "0.0.29"
+version = "0.0.31"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "80465ac785be26c65c9720f3a9e527d6d06a8493b51cb002e9d9883c7a6bd6bf"
+checksum = "836a4d48fb96e6e3978c475e7eb7ac6a0eaeb6036ce94e3dbbf074a14fd49394"
 dependencies = [
  "anyhow",
 ]
 
 [[package]]
 name = "crb-superagent"
-version = "0.0.29"
+version = "0.0.31"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "483a3aca517331f8ecfc378535dd43abee1a7f7a162b64a3758d96fba02ec4ff"
+checksum = "f901c4eb27d53a157fbbf6def3d85f6be5aec24db5d70e5e05d8d6d9909b9a49"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -432,17 +435,6 @@ name = "event-listener"
 version = "2.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0206175f82b8d6bf6652ff7d71a1e27fd2e4efde587fd368662814d6ec1d9ce0"
-
-[[package]]
-name = "event-listener"
-version = "5.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3492acde4c3fc54c845eaab3eed8bd00c7a7d881f78bfc801e43a93dec1331ae"
-dependencies = [
- "concurrent-queue",
- "parking",
- "pin-project-lite",
-]
 
 [[package]]
 name = "fastrand"
@@ -642,18 +634,6 @@ name = "gimli"
 version = "0.31.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "07e28edb80900c19c28f1072f2e8aeca7fa06b23cd4169cefe1af5aa3260783f"
-
-[[package]]
-name = "gloo-timers"
-version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bbb143cf96099802033e0d4f4963b19fd2e0b728bcf076cd9cf7f6634f092994"
-dependencies = [
- "futures-channel",
- "futures-core",
- "js-sys",
- "wasm-bindgen",
-]
 
 [[package]]
 name = "h2"
@@ -1281,15 +1261,6 @@ dependencies = [
  "libc",
  "pkg-config",
  "vcpkg",
-]
-
-[[package]]
-name = "ordered-float"
-version = "4.6.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7bb71e1b3fa6ca1c61f383464aaf2bb0e2f8e772a1f01d486832464de363b951"
-dependencies = [
- "num-traits",
 ]
 
 [[package]]
@@ -2106,10 +2077,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e0f540e3240398cce6128b64ba83fdbdd86129c16a3aa1a3a252efd66eb3d587"
 dependencies = [
  "getrandom 0.3.1",
- "js-sys",
  "serde",
  "sha1_smol",
- "wasm-bindgen",
 ]
 
 [[package]]
