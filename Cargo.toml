@@ -12,3 +12,4 @@ async-stripe = { version = "0.40.0",  features = ["runtime-tokio-hyper"] }
 crb = "0.0.31"
 mcp_rust_schema = "0.1.4"
 openssl = "0.10.71"
+ring = "0.17.13"
