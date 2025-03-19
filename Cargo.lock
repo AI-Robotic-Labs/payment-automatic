@@ -51,9 +51,9 @@ dependencies = [
 
 [[package]]
 name = "async-stripe"
-version = "0.40.0"
+version = "0.40.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "47f65212368b335227279269601ad1dba2176e98608795b93448fc83d5dd9dcc"
+checksum = "e757b8d9d76544daaf1fce136221628207180fc5d7d6ee955109d74e75a38cad"
 dependencies = [
  "chrono",
  "futures-util",
@@ -1410,9 +1410,9 @@ dependencies = [
 
 [[package]]
 name = "reqwest"
-version = "0.12.14"
+version = "0.12.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "989e327e510263980e231de548a33e63d34962d29ae61b467389a1a09627a254"
+checksum = "d19c46a6fdd48bc4dab94b6103fccc55d34c67cc0ad04653aad4ea2a07cd7bbb"
 dependencies = [
  "base64 0.22.1",
  "bytes",
