@@ -34,9 +34,9 @@ dependencies = [
 
 [[package]]
 name = "anyhow"
-version = "1.0.96"
+version = "1.0.97"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6b964d184e89d9b6b67dd2715bc8e74cf3107fb2b529990c90cf517326150bf4"
+checksum = "dcfed56ad506cb2c684a14971b8861fdc3baaaae314b9e5f9bb532cbe3ba7a4f"
 
 [[package]]
 name = "async-channel"
@@ -76,9 +76,9 @@ dependencies = [
 
 [[package]]
 name = "async-trait"
-version = "0.1.86"
+version = "0.1.88"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "644dd749086bf3771a2fbc5f256fdb982d53f011c7d5d560304eafeecebce79d"
+checksum = "e539d3fca749fcee5236ab05e93a52867dd549cc157c8cb7f99595f3cedffdb5"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -230,9 +230,9 @@ dependencies = [
 
 [[package]]
 name = "crb"
-version = "0.0.31"
+version = "0.0.33"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "017ddd122d1491b8c2e3a2678f1463f170a33fa493babdfe579b883e085ecfe8"
+checksum = "8bd02eb2d3284f4cbc13b77023cba7bd099743269b3baa30f3f8bbb608f29d1d"
 dependencies = [
  "crb-agent",
  "crb-core",
@@ -243,9 +243,9 @@ dependencies = [
 
 [[package]]
 name = "crb-agent"
-version = "0.0.31"
+version = "0.0.33"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6bdf16fdbf847989014627409316bdba2af8431b33a91ef7cb6f997bce59c187"
+checksum = "b95e64dfe53d66733c4a1c4b8f7ccd027add057d37d57938fb5666f88a566016"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -259,56 +259,56 @@ dependencies = [
 
 [[package]]
 name = "crb-core"
-version = "0.0.31"
+version = "0.0.33"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "56abbaa1ee2cef9ca1501a8e6052e427b03727e9073a908bc5905cfdf9bd58df"
+checksum = "7a83f56823675c36530ccf1b45e808c21c7faf51fff39a25548b75d048b97c2c"
 dependencies = [
  "anyhow",
  "crb-core-std",
  "derive_more 2.0.1",
  "futures",
- "thiserror 2.0.11",
+ "thiserror 2.0.12",
  "tokio",
 ]
 
 [[package]]
 name = "crb-core-std"
-version = "0.0.31"
+version = "0.0.33"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bee970b4568ccdeb3b5f3accf2186c3025496c889efa949be29d4984c7458606"
+checksum = "827a6b6389ae1dd4f9d2013965027fcce16089a4117f49309d5ed261b1e990aa"
 dependencies = [
  "tokio",
- "uuid 1.15.1",
+ "uuid 1.16.0",
 ]
 
 [[package]]
 name = "crb-runtime"
-version = "0.0.31"
+version = "0.0.33"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "46104f014498420c7b65ce7f2009f5544876d486548bc3695d3ce211387f257d"
+checksum = "5166d8e6d4571a71a304b837a8ffffff903e42fe38cb58f514cdd563a395d498"
 dependencies = [
  "anyhow",
  "async-trait",
  "crb-core",
  "derive_more 2.0.1",
  "futures",
- "thiserror 2.0.11",
+ "thiserror 2.0.12",
 ]
 
 [[package]]
 name = "crb-send"
-version = "0.0.31"
+version = "0.0.33"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "836a4d48fb96e6e3978c475e7eb7ac6a0eaeb6036ce94e3dbbf074a14fd49394"
+checksum = "4df34bcc5131c9eeee6d80c5395673fa925c4e52e99b82bd66e3eb5f597ce318"
 dependencies = [
  "anyhow",
 ]
 
 [[package]]
 name = "crb-superagent"
-version = "0.0.31"
+version = "0.0.33"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f901c4eb27d53a157fbbf6def3d85f6be5aec24db5d70e5e05d8d6d9909b9a49"
+checksum = "ffc266fa52ba2927e21bc31bf82ee3c5e4bfdcab5437b2e98adc7ba411cf7498"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -320,7 +320,7 @@ dependencies = [
  "futures",
  "futures-util",
  "log",
- "thiserror 2.0.11",
+ "thiserror 2.0.12",
  "tokio-stream",
  "typed-slab",
 ]
@@ -1131,9 +1131,9 @@ dependencies = [
 
 [[package]]
 name = "log"
-version = "0.4.26"
+version = "0.4.27"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "30bde2b3dc3671ae49d8e2e9f044c7c005836e7a023ee57cffa25ab82764bb9e"
+checksum = "13dc2df351e3202783a1fe0d44375f7295ffb4049267b0f3018346dc122a1d94"
 
 [[package]]
 name = "mcp_rust_schema"
@@ -1143,7 +1143,7 @@ checksum = "a62f54db22818f596aca8a3a0d640aeec071a1252e4f2e26d9efd8f128926083"
 dependencies = [
  "serde",
  "serde_json",
- "thiserror 2.0.11",
+ "thiserror 2.0.12",
 ]
 
 [[package]]
@@ -1827,11 +1827,11 @@ dependencies = [
 
 [[package]]
 name = "thiserror"
-version = "2.0.11"
+version = "2.0.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d452f284b73e6d76dd36758a0c8684b1d5be31f92b89d07fd5822175732206fc"
+checksum = "567b8a2dae586314f7be2a752ec7474332959c6460e02bde30d702a66d488708"
 dependencies = [
- "thiserror-impl 2.0.11",
+ "thiserror-impl 2.0.12",
 ]
 
 [[package]]
@@ -1847,9 +1847,9 @@ dependencies = [
 
 [[package]]
 name = "thiserror-impl"
-version = "2.0.11"
+version = "2.0.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "26afc1baea8a989337eeb52b6e72a039780ce45c3edfcc9c5b9d112feeb173c2"
+checksum = "7f7cf42b4507d8ea322120659672cf1b9dbb93f8f2d4ecfd6e51350ff5b17a1d"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1868,9 +1868,9 @@ dependencies = [
 
 [[package]]
 name = "tokio"
-version = "1.44.1"
+version = "1.44.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f382da615b842244d4b8738c82ed1275e6c5dd90c459a30941cd07080b06c91a"
+checksum = "e6b88822cbe49de4185e3a4cbf8321dd487cf5fe0c5c65695fef6346371e9c48"
 dependencies = [
  "backtrace",
  "bytes",
@@ -2066,9 +2066,9 @@ dependencies = [
 
 [[package]]
 name = "uuid"
-version = "1.15.1"
+version = "1.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e0f540e3240398cce6128b64ba83fdbdd86129c16a3aa1a3a252efd66eb3d587"
+checksum = "458f7a779bf54acc9f347480ac654f68407d3aab21269a6e3c9f922acd9e2da9"
 dependencies = [
  "getrandom 0.3.1",
  "serde",
