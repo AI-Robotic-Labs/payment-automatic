@@ -230,9 +230,9 @@ dependencies = [
 
 [[package]]
 name = "crb"
-version = "0.0.34"
+version = "0.0.35"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fff279b36e48b5b4cd683bbf27a503a33ca3140b0e20eaedddd522381f2fb5ae"
+checksum = "2ae88d07927a3f7f666c03235bf9d54b93f2ec7ba57cdf9d3adf26ee6ca7ec36"
 dependencies = [
  "crb-agent",
  "crb-core",
@@ -243,9 +243,9 @@ dependencies = [
 
 [[package]]
 name = "crb-agent"
-version = "0.0.34"
+version = "0.0.35"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1aa861c61082bb00914cc0449c604cbb728fc8ee606adad80a920febc5f96334"
+checksum = "bdbe89d2471591f9e7f30bf191e52ffb80701674ae7ff425a79ad3d748701179"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -259,9 +259,9 @@ dependencies = [
 
 [[package]]
 name = "crb-core"
-version = "0.0.34"
+version = "0.0.35"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "666000f04cd04758d4b1865fc57a74077b8776889af66e36cd261d3980c08bf3"
+checksum = "76e20e5cf5e6cdea2e34d1dbf97edadc1bdaa433118dae9f0b7fd9d7aafc217e"
 dependencies = [
  "anyhow",
  "crb-core-std",
@@ -273,9 +273,9 @@ dependencies = [
 
 [[package]]
 name = "crb-core-std"
-version = "0.0.34"
+version = "0.0.35"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "86b1fbb3b303ac58ded507d3788343d6b3ec1f41e9eb6c40ad695ca3609ac2a4"
+checksum = "ed9c9d1131b5b3639adcb94aac19a6dd969234c027944bdfb846d87e4aeaf339"
 dependencies = [
  "tokio",
  "uuid 1.16.0",
@@ -283,9 +283,9 @@ dependencies = [
 
 [[package]]
 name = "crb-runtime"
-version = "0.0.34"
+version = "0.0.35"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "71c9ca4b202287b3f57dd15f6af53cd2503ecb093e0e23972bfd883159054615"
+checksum = "1e504a843dc151574b552184803e33794ea077cd4cf1d7d35b1d738d85b30a54"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -297,18 +297,18 @@ dependencies = [
 
 [[package]]
 name = "crb-send"
-version = "0.0.34"
+version = "0.0.35"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "aa501ed8d085877c50e46978145fac40a88524e40322217e8c33b9ff56a6b740"
+checksum = "1fc9626722445daadd0bbefdc36f9eea136400c3890b1b48f6e1a14ae450ff99"
 dependencies = [
  "anyhow",
 ]
 
 [[package]]
 name = "crb-superagent"
-version = "0.0.34"
+version = "0.0.35"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "006c5899a86783fd36d13077b1f11dcb271eda5756fa979d025f63d9029e8c37"
+checksum = "c54a0f8fa4db8e82f9873c4c14a6d33375128cc8782501f5f0e16b673e4873c3"
 dependencies = [
  "anyhow",
  "async-trait",
