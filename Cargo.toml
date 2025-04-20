@@ -9,7 +9,7 @@ serde_json = "1.0.140"
 reqwest = { version = "0.12.15", features = ["json"] }
 tokio =  { version = "1.44.2", features = ["full"] }
 async-stripe = { version = "0.41.0",  features = ["runtime-tokio-hyper"] }
-crb = "0.0.35"
+crb = "0.0.36"
 mcp_rust_schema = "0.1.4"
 openssl = "0.10.72"
 ring = "0.17.14"
